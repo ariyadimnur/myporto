@@ -1,0 +1,6 @@
+# Memperbolehkan semua mesin pencari mengakses seluruh halaman
+User-agent: *
+Allow: /
+
+# Lokasi sitemap
+Sitemap: https://ariyadi.eu.org/sitemap.xml
