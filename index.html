@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Ariyadi M Nur | Web Developer & UI/UX Designer</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Portofolio Ariyadi M Nur, seorang Web Developer & UI/UX Designer. Lihat bio, keterampilan, dan proyek terbaru.">
+  <meta name="author" content="Ariyadi M Nur">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org JSON-LD for Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ariyadi M Nur",
+    "jobTitle": "Web Developer & UI/UX Designer",
+    "image": "https://ariyadimnur.github.io/portofolio-asep/profil1.jpg",
+    "url": "https://ariyadimnur.github.io/portofolio-asep/",
+    "sameAs": [
+      "https://github.com/ariyadimnur",
+      "https://linkedin.com/in/username",
+      "https://instagram.com/ariya.munur"
+    ]
+  }
+  </script>
+  
+  <!-- Font Awesome (ikon sosial media) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS (Animate On Scroll) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1 class="logo">Portofolio</h1>
+  </header>
+
+  <!-- Header / Hero -->
+  <header class="hero">
+    <div class="stars"></div>
+    <div class="shooting-stars"></div>
+    <div class="theme-toggle">
+      <button id="toggle-theme"><i class="fas fa-moon"></i></button>
+    </div>
+    <div class="hero-content" data-aos="fade-up">
+      <img src="profil1.jpg" alt="Foto Profil Ariyadi M Nur" class="profile-img">
+      <h1>Ariyadi M Nur</h1>
+      <p class="profession">Web Developer & Desainer UI/UX</p>
+      <div class="social-links">
+        <a href="https://github.com/ariyadimnur" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/username" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/ariya.munur" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Tentang Saya -->
+    <section id="about" data-aos="fade-right">
+      <h2>Tentang Saya</h2>
+      <p>
+        Halo! Saya Ariyadi, seorang Web Developer yang berfokus pada pembuatan website modern, responsif, dan ramah pengguna. Saya juga tertarik dengan desain UI/UX yang estetik dan fungsional.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" data-aos="fade-left">
+      <h2>Keterampilan</h2>
+      <div class="skills-grid">
+        <div class="skill">HTML5 & CSS3</div>
+        <div class="skill">JavaScript (ES6+)</div>
+        <div class="skill">React & Tailwind</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">Python</div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" data-aos="zoom-in">
+      <h2>Proyek Terbaru</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="project1.jpg" alt="Proyek 1">
+          <h3>Website Portofolio</h3>
+          <p>Membangun website portofolio pribadi dengan GitHub Pages.</p>
+        </div>
+        <div class="project-card">
+          <img src="project2.jpg" alt="Proyek 2">
+          <h3>Aplikasi Toko Online</h3>
+          <p>E-commerce fullstack dengan React & Node.js.</p>
+        </div>
+        <div class="project-card">
+          <img src="project3.jpg" alt="Proyek 3">
+          <h3>Dashboard Admin</h3>
+          <p>Dashboard interaktif dengan Chart.js & Tailwind.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" data-aos="fade-up">
+      <h2>Kontak</h2>
+      <p>Email: <a href="mailto:admin@ariyadi.eu.org">admin@ariyadi.eu.org</a></p>
+      <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/username</a></p>
+      <p>GitHub: <a href="https://github.com/ariyadimnur" target="_blank">github.com/ariyadimunur</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ariyadi M Nur | Dibuat dengan ❤ di GitHub Pages</p>
+  </footer>
+
+  <!-- JS Theme Toggle -->
+  <script>
+    const toggleBtn = document.getElementById("toggle-theme");
+    const body = document.body;
+
+    function setIcon(isDark) {
+      toggleBtn.innerHTML = isDark 
+        ? '<i class="fas fa-sun rotate"></i>' 
+        : '<i class="fas fa-moon rotate"></i>';
+      setTimeout(() => {
+        const icon = toggleBtn.querySelector("i");
+        if (icon) icon.classList.remove("rotate");
+      }, 500);
+    }
+
+    if (localStorage.getItem("theme") === "dark") {
+      body.classList.add("dark-mode");
+      setIcon(true);
+    } else {
+      setIcon(false);
+    }
+
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+      if (body.classList.contains("dark-mode")) {
+        setIcon(true);
+        localStorage.setItem("theme", "dark");
+      } else {
+        setIcon(false);
+        localStorage.setItem("theme", "light");
+      }
+    });
+  </script>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
