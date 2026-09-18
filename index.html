@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ariyadi M Nur — Senior Web Developer & UI/UX Specialist</title>
+  <title>Ariyadi M Nur — Senior Web Developer &amp; UI/UX Specialist</title>
   
   <!-- SEO & Meta -->
   <meta name="description" content="Portofolio profesional Ariyadi M Nur, Web Developer dan UI/UX Designer.">
@@ -38,7 +38,7 @@
       box-sizing: border-box;
     }
 
-    /* MENCEGAH GESER KE SAMPING / HORIZONTAL SCROLL DI HP */
+    /* Mencegah Horizontal Scroll / Geser ke Samping di HP */
     html, body {
       width: 100%;
       max-width: 100%;
@@ -123,7 +123,7 @@
       font-size: 0.9rem;
       font-weight: 500;
       color: var(--text-muted);
-      transition: 0.3s;
+      transition: color 0.3s ease;
     }
 
     .nav-links a:hover {
@@ -137,7 +137,7 @@
       border-radius: 50px;
       font-weight: 600 !important;
       box-shadow: 0 4px 20px var(--primary-glow);
-      transition: 0.3s !important;
+      transition: all 0.3s ease !important;
     }
 
     .nav-cta:hover {
@@ -145,7 +145,6 @@
       box-shadow: 0 6px 25px var(--primary-glow);
     }
 
-    /* Mobile Menu Toggle Button */
     .menu-toggle {
       display: none;
       background: none;
@@ -236,7 +235,7 @@
       border-radius: 12px;
       font-weight: 600;
       box-shadow: 0 8px 25px var(--primary-glow);
-      transition: 0.3s;
+      transition: all 0.3s ease;
       display: inline-flex;
       align-items: center;
       gap: 10px;
@@ -254,7 +253,7 @@
       padding: 14px 28px;
       border-radius: 12px;
       font-weight: 600;
-      transition: 0.3s;
+      transition: all 0.3s ease;
     }
 
     .btn-sec:hover {
@@ -263,7 +262,7 @@
       transform: translateY(-3px);
     }
 
-    /* Hero Image Container */
+    /* Hero Image */
     .hero-img-container {
       position: relative;
       display: flex;
@@ -296,10 +295,14 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: 0.5s;
+      transition: transform 0.5s ease;
     }
 
-    /* Main Container & Sections */
+    .profile-frame:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Container & Sections */
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -333,7 +336,7 @@
       letter-spacing: -0.5px;
     }
 
-    /* General Cards */
+    /* About Cards */
     .grid-3 {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -348,7 +351,7 @@
       padding: 30px;
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-      transition: 0.3s;
+      transition: all 0.3s ease;
       width: 100%;
     }
 
@@ -382,7 +385,7 @@
       font-size: 0.92rem;
     }
 
-    /* SKILLS PRO */
+    /* Skills Grid */
     .skills-grid-pro {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -414,7 +417,7 @@
       height: 100%;
       background: var(--primary);
       opacity: 0;
-      transition: 0.3s;
+      transition: opacity 0.3s ease;
     }
 
     .skill-card-pro:hover {
@@ -452,7 +455,7 @@
       color: var(--text-muted);
     }
 
-    /* PROJECTS PRO */
+    /* Projects Grid */
     .projects-grid-pro {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -529,7 +532,7 @@
       font-size: 0.92rem;
     }
 
-    /* CERTIFICATES PRO */
+    /* Certificates Grid */
     .cert-grid-pro {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -595,7 +598,7 @@
       border: 1px solid var(--border-color);
       padding: 6px 14px;
       border-radius: 8px;
-      transition: 0.3s;
+      transition: all 0.3s ease;
     }
 
     .cert-action-link:hover {
@@ -657,7 +660,7 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      transition: 0.3s;
+      transition: all 0.3s ease;
       word-break: break-all;
     }
 
@@ -681,10 +684,8 @@
       font-size: 0.88rem;
     }
 
-    /* =====================================================
-       RESPONSIVE MEDIA QUERIES (MOBILE FIXES)
-    ====================================================== -->
-    @media(max-width: 900px) {
+    /* Responsive Media Queries */
+    @media (max-width: 900px) {
       .hero-grid {
         grid-template-columns: 1fr;
         text-align: center;
@@ -700,7 +701,6 @@
         margin: 0 auto 30px auto;
       }
       
-      /* Mobile Menu Toggle Styling */
       .menu-toggle {
         display: block;
       }
@@ -725,7 +725,7 @@
       }
     }
 
-    @media(max-width: 480px) {
+    @media (max-width: 480px) {
       .hero {
         padding-top: 120px;
       }
@@ -745,7 +745,9 @@
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="nav-container">
-      <a href="#" class="logo"><span class="logo-badge"></span> Ariyadi M Nur</a>
+      <a href="#" class="logo">
+        <span class="logo-badge"></span> Ariyadi M Nur
+      </a>
       <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
         <i class="fas fa-bars"></i>
       </button>
@@ -783,7 +785,7 @@
   </section>
 
   <div class="container">
-    <!-- ABOUT -->
+    <!-- ABOUT SECTION -->
     <section id="about" data-aos="fade-up">
       <div class="section-header">
         <span class="section-tag">01 / TENTANG SAYA</span>
@@ -808,7 +810,7 @@
       </div>
     </section>
 
-    <!-- SKILLS (KEAHLIAN PRO) -->
+    <!-- SKILLS SECTION -->
     <section id="skills" data-aos="fade-up">
       <div class="section-header">
         <span class="section-tag">02 / TEKNOLOGI</span>
@@ -860,7 +862,7 @@
       </div>
     </section>
 
-    <!-- PROJECTS (PROYEK TERBARU PRO) -->
+    <!-- PROJECTS SECTION -->
     <section id="projects" data-aos="fade-up">
       <div class="section-header">
         <span class="section-tag">03 / PORTOFOLIO</span>
@@ -900,7 +902,7 @@
       </div>
     </section>
 
-    <!-- CERTIFICATES (SERTIFIKAT PRO) -->
+    <!-- CERTIFICATES SECTION -->
     <section id="certificates" data-aos="fade-up">
       <div class="section-header">
         <span class="section-tag">04 / KREDENSIAL</span>
@@ -928,7 +930,7 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT SECTION -->
     <section id="contact" data-aos="fade-up" style="border: none; padding-bottom: 120px;">
       <div class="contact-wrapper">
         <span class="section-tag" style="justify-content: center; display: block;">05 / KONTAK</span>
@@ -948,12 +950,12 @@
     <p>&copy; 2026 Ariyadi M Nur. All rights reserved.</p>
   </footer>
 
-  <!-- Script untuk Mobile Menu Toggle & AOS -->
+  <!-- AOS Script & Mobile Navigation Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
     AOS.init({ duration: 800, once: true });
 
-    // Mobile Menu Toggle Script
+    // Mobile Menu Toggle Handler
     const menuToggle = document.getElementById('menu-toggle');
     const navLinks = document.getElementById('nav-links');
 
@@ -961,7 +963,7 @@
       navLinks.classList.toggle('active');
     });
 
-    // Close menu when clicking any link on mobile
+    // Close mobile menu automatically on navigation item click
     document.querySelectorAll('.nav-item, .nav-cta').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
