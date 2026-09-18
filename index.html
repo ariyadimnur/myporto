@@ -7,10 +7,10 @@
   <!-- =====================================================
         BASIC SEO
   ====================================================== -->
-  <title>Portofolio Ariyadi M Nur | Web Developer & UI/UX Designer</title>
+  <title>Ariyadi M Nur | Professional Web Developer & UI/UX Designer</title>
   <meta
     name="description"
-    content="Portofolio Ariyadi M Nur, Web Developer dan UI/UX Designer. Lihat profil, keterampilan, proyek, dan sertifikat."
+    content="Portofolio profesional Ariyadi M Nur, Web Developer dan UI/UX Designer yang berfokus pada solusi digital modern dan berkualitas."
   >
   <meta name="author" content="Ariyadi M Nur">
   <meta
@@ -36,11 +36,11 @@
   <meta property="og:type" content="website">
   <meta
     property="og:title"
-    content="Portofolio Ariyadi M Nur | Web Developer & UI/UX Designer"
+    content="Ariyadi M Nur | Professional Web Developer & UI/UX Designer"
   >
   <meta
     property="og:description"
-    content="Portofolio Ariyadi M Nur, Web Developer dan UI/UX Designer. Lihat profil, keterampilan, proyek, dan sertifikat."
+    content="Portofolio profesional Ariyadi M Nur, Web Developer dan UI/UX Designer."
   >
   <meta
     property="og:url"
@@ -63,17 +63,14 @@
   <!-- =====================================================
         TWITTER / X CARD
   ====================================================== -->
-  <meta
-    name="twitter:card"
-    content="summary_large_image"
-  >
+  <meta name="twitter:card" content="summary_large_image">
   <meta
     name="twitter:title"
-    content="Portofolio Ariyadi M Nur | Web Developer & UI/UX Designer"
+    content="Ariyadi M Nur | Professional Web Developer & UI/UX Designer"
   >
   <meta
     name="twitter:description"
-    content="Portofolio Ariyadi M Nur, Web Developer dan UI/UX Designer."
+    content="Portofolio profesional Ariyadi M Nur, Web Developer dan UI/UX Designer."
   >
   <meta
     name="twitter:image"
@@ -109,21 +106,6 @@
     "sameAs": [
       "https://github.com/ariyadimnur",
       "https://instagram.com/ariya.munur"
-    ],
-    "hasCredential": [
-      {
-        "@type": "EducationalOccupationalCredential",
-        "name": "Responsive Web Design",
-        "description": "Certificate earned from freeCodeCamp",
-        "credentialCategory": "Certificate",
-        "educationalLevel": "Beginner to Intermediate",
-        "recognizedBy": {
-          "@type": "Organization",
-          "name": "freeCodeCamp",
-          "url": "https://www.freecodecamp.org/"
-        },
-        "url": "https://www.freecodecamp.org/certification/ariyadi/responsive-web-design"
-      }
     ]
   }
   </script>
@@ -136,10 +118,7 @@
   <!-- =====================================================
         CSS
   ====================================================== -->
-  <link
-    rel="stylesheet"
-    href="style.css"
-  >
+  <link rel="stylesheet" href="style.css">
 
   <!-- =====================================================
         FONT AWESOME
@@ -161,85 +140,77 @@
 <body>
 
   <!-- =====================================================
-        HERO SECTION & NAVBAR
+        NAVBAR / HEADER
   ====================================================== -->
-  <header class="hero">
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Ariyadi M Nur</a>
+      
+      <!-- Tombol Hamburger untuk Mobile -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Buka Menu">
+        <i class="fas fa-bars"></i>
+      </button>
 
-    <div class="stars"></div>
-    <div class="shooting-stars"></div>
-
-    <!-- Navbar gabung di dalam Header Hero agar posisi menyatu -->
-    <nav class="navbar">
-      <h1 class="logo">
-        Ariyadi M Nur
-      </h1>
-
-      <div class="nav-links">
+      <nav class="nav-links" id="nav-links">
         <a href="#about">Tentang</a>
-        <a href="#skills">Keterampilan</a>
+        <a href="#skills">Keahlian</a>
         <a href="#projects">Proyek</a>
         <a href="#certificates">Sertifikat</a>
-        <a href="#contact">Kontak</a>
-      </div>
-
-      <!-- Theme Toggle -->
-      <div class="theme-toggle">
-        <button
-          id="toggle-theme"
-          type="button"
-          aria-label="Ganti tema"
-          title="Ganti tema"
-        >
-          <i class="fas fa-moon"></i>
-        </button>
-      </div>
-    </nav>
-
-    <div
-      class="hero-content"
-      data-aos="fade-up"
-    >
-      <img
-        src="profil1.jpg"
-        alt="Foto profil Ariyadi M Nur"
-        class="profile-img"
-        loading="eager"
-      >
-
-      <h2>
-        Ariyadi M Nur
-      </h2>
-
-      <p class="profession">
-        Web Developer &amp; Desainer UI/UX
-      </p>
-
-      <!-- Social Media -->
-      <div class="social-links">
-        <a
-          href="https://github.com/ariyadimnur"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub Ariyadi M Nur"
-          title="GitHub"
-        >
-          <i class="fab fa-github"></i>
-        </a>
-
-        <a
-          href="https://instagram.com/ariya.munur"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram Ariyadi M Nur"
-          title="Instagram"
-        >
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-
+        <a href="#contact" class="btn-nav-contact">Kontak</a>
+      </nav>
     </div>
-
   </header>
+
+  <!-- =====================================================
+        HERO SECTION
+  ====================================================== -->
+  <section class="hero">
+    <div class="hero-container" data-aos="fade-up">
+      <div class="hero-image-wrapper">
+        <img
+          src="profil1.jpg"
+          alt="Foto profil Ariyadi M Nur"
+          class="profile-img"
+          loading="eager"
+        >
+      </div>
+
+      <div class="hero-text">
+        <span class="badge-welcome">Halo, Selamat Datang</span>
+        <h1>Ariyadi M Nur</h1>
+        <p class="profession">Professional Web Developer &amp; UI/UX Designer</p>
+        <p class="hero-desc">
+          Berfokus pada pengembangan aplikasi web modern, sistem yang handal, dan antarmuka pengguna yang bersih serta fungsional.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+          <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+        </div>
+
+        <div class="social-links">
+          <a
+            href="https://github.com/ariyadimnur"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub Ariyadi M Nur"
+            title="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://instagram.com/ariya.munur"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram Ariyadi M Nur"
+            title="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- =====================================================
         MAIN CONTENT
@@ -247,147 +218,132 @@
   <main>
 
     <!-- TENTANG SAYA -->
-    <section
-      id="about"
-      data-aos="fade-right"
-    >
-      <h2>
-        Tentang Saya
-      </h2>
-      <p>
-        Halo! Saya Ariyadi, seorang Web Developer yang berfokus
-        pada pembuatan website modern, responsif, dan ramah pengguna.
-        Saya juga tertarik dengan desain UI/UX yang estetik dan fungsional.
-      </p>
+    <section id="about" class="section" data-aos="fade-up">
+      <div class="section-header">
+        <h2>Tentang Saya</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="about-content">
+        <p>
+          Halo! Saya Ariyadi, seorang pengembang web dan perancang antarmuka yang berdedikasi tinggi dalam menciptakan pengalaman digital yang mulus dan interaktif. Berpengalaman dalam merancang struktur web yang bersih, performa optimal, serta estetika visual yang profesional.
+        </p>
+      </div>
     </section>
 
     <!-- SKILLS -->
-    <section
-      id="skills"
-      data-aos="fade-left"
-    >
-      <h2>
-        Keterampilan
-      </h2>
+    <section id="skills" class="section" data-aos="fade-up">
+      <div class="section-header">
+        <h2>Keterampilan & Teknologi</h2>
+        <div class="underline"></div>
+      </div>
       <div class="skills-grid">
-        <div class="skill">HTML5 &amp; CSS3</div>
-        <div class="skill">JavaScript (ES6+)</div>
-        <div class="skill">React &amp; Tailwind</div>
-        <div class="skill">Node.js</div>
-        <div class="skill">MySQL</div>
-        <div class="skill">Python</div>
+        <div class="skill-card"><i class="fab fa-html5"></i> <span>HTML5 &amp; CSS3</span></div>
+        <div class="skill-card"><i class="fab fa-js"></i> <span>JavaScript (ES6+)</span></div>
+        <div class="skill-card"><i class="fab fa-react"></i> <span>React &amp; Tailwind</span></div>
+        <div class="skill-card"><i class="fab fa-node-js"></i> <span>Node.js</span></div>
+        <div class="skill-card"><i class="fas fa-database"></i> <span>MySQL &amp; MariaDB</span></div>
+        <div class="skill-card"><i class="fab fa-python"></i> <span>Python</span></div>
       </div>
     </section>
 
     <!-- PROJECTS -->
-    <section
-      id="projects"
-      data-aos="zoom-in"
-    >
-      <h2>
-        Proyek Terbaru
-      </h2>
+    <section id="projects" class="section" data-aos="fade-up">
+      <div class="section-header">
+        <h2>Proyek Terbaru</h2>
+        <div class="underline"></div>
+      </div>
       <div class="projects-grid">
         <!-- Project 1 -->
         <div class="project-card">
-          <img
-            src="project1.jpg"
-            alt="Website portofolio pribadi"
-            loading="lazy"
-          >
-          <h3>Website Portofolio</h3>
-          <p>Membangun website portofolio pribadi dengan GitHub Pages.</p>
+          <div class="project-img-wrapper">
+            <img src="project1.jpg" alt="Website portofolio pribadi" loading="lazy">
+          </div>
+          <div class="project-info">
+            <h3>Website Portofolio</h3>
+            <p>Membangun website portofolio pribadi dengan optimasi SEO tinggi dan performa cepat di GitHub Pages.</p>
+          </div>
         </div>
 
         <!-- Project 2 -->
         <div class="project-card">
-          <img
-            src="project2.jpg"
-            alt="Aplikasi toko online"
-            loading="lazy"
-          >
-          <h3>Aplikasi Toko Online</h3>
-          <p>E-commerce fullstack dengan React &amp; Node.js.</p>
+          <div class="project-img-wrapper">
+            <img src="project2.jpg" alt="Aplikasi toko online" loading="lazy">
+          </div>
+          <div class="project-info">
+            <h3>Aplikasi Toko Online</h3>
+            <p>E-commerce fullstack modern dengan integrasi React &amp; Node.js yang responsif.</p>
+          </div>
         </div>
 
         <!-- Project 3 -->
         <div class="project-card">
-          <img
-            src="project3.jpg"
-            alt="Dashboard admin interaktif"
-            loading="lazy"
-          >
-          <h3>Dashboard Admin</h3>
-          <p>Dashboard interaktif dengan Chart.js &amp; Tailwind.</p>
+          <div class="project-img-wrapper">
+            <img src="project3.jpg" alt="Dashboard admin interaktif" loading="lazy">
+          </div>
+          <div class="project-info">
+            <h3>Dashboard Admin</h3>
+            <p>Dashboard analitik interaktif menggunakan Chart.js dan Tailwind CSS untuk manajemen data.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- CERTIFICATES -->
-    <section
-      id="certificates"
-      data-aos="fade-up"
-    >
-      <h2>
-        Sertifikat
-      </h2>
+    <section id="certificates" class="section" data-aos="fade-up">
+      <div class="section-header">
+        <h2>Sertifikasi Profesional</h2>
+        <div class="underline"></div>
+      </div>
       <div class="certificates-grid">
         <!-- Certificate 1 -->
         <div class="certificate-card">
+          <div class="cert-icon"><i class="fas fa-certificate"></i></div>
           <h3>Responsive Web Design</h3>
-          <p>freeCodeCamp</p>
+          <p class="issuer">freeCodeCamp</p>
           <a
             href="https://www.freecodecamp.org/certification/ariyadi/responsive-web-design"
             target="_blank"
             rel="noopener noreferrer"
+            class="btn-cert"
           >
-            Lihat Sertifikat
+            Lihat Kredensial
           </a>
         </div>
 
         <!-- Certificate 2 -->
         <div class="certificate-card">
-          <h3>JavaScript Algorithms and Data Structures</h3>
-          <p>freeCodeCamp</p>
-          <p>Sertifikat akan ditambahkan.</p>
+          <div class="cert-icon"><i class="fas fa-award"></i></div>
+          <h3>JavaScript Algorithms &amp; Data Structures</h3>
+          <p class="issuer">freeCodeCamp</p>
+          <span class="cert-status">Akan Segera Ditambahkan</span>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section
-      id="contact"
-      data-aos="fade-up"
-    >
-      <h2>
-        Kontak
-      </h2>
-      <p>
-        Email:
-        <a href="mailto:admin@ariyadi.eu.org">
-          admin@ariyadi.eu.org
-        </a>
+    <section id="contact" class="section contact-section" data-aos="fade-up">
+      <div class="section-header">
+        <h2>Hubungi Saya</h2>
+        <div class="underline"></div>
+      </div>
+      <p class="contact-subtitle">
+        Tertarik untuk berkolaborasi atau memiliki pertanyaan seputar proyek? Jangan ragu untuk menghubungi saya melalui saluran di bawah ini.
       </p>
-      <p>
-        Instagram:
-        <a
-          href="https://instagram.com/ariya.munur"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          instagram.com/ariya.munur
+      
+      <div class="contact-grid">
+        <a href="mailto:admin@ariyadi.eu.org" class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>admin@ariyadi.eu.org</span>
         </a>
-      </p>
-      <p>
-        GitHub:
-        <a
-          href="https://github.com/ariyadimnur"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          github.com/ariyadimnur
+        <a href="https://instagram.com/ariya.munur" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <i class="fab fa-instagram"></i>
+          <span>@ariya.munur</span>
         </a>
-      </p>
+        <a href="https://github.com/ariyadimnur" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <i class="fab fa-github"></i>
+          <span>github.com/ariyadimnur</span>
+        </a>
+      </div>
     </section>
 
   </main>
@@ -396,66 +352,51 @@
         FOOTER
   ====================================================== -->
   <footer>
-    <p>
-      &copy; 2026 Ariyadi M Nur |
-      Dibuat dengan <span aria-label="cinta">❤</span>
-      di GitHub Pages
-    </p>
+    <div class="footer-container">
+      <p>&copy; 2026 Ariyadi M Nur. Hak Cipta Dilindungi.</p>
+      <p class="footer-sub">Dibuat dengan dedikasi &amp; profesionalisme.</p>
+    </div>
   </footer>
 
   <!-- =====================================================
-        THEME TOGGLE JAVASCRIPT
+        JAVASCRIPT (Mobile Menu & Scroll Effect)
   ====================================================== -->
   <script>
-    const toggleBtn = document.getElementById("toggle-theme");
-    const body = document.body;
-
-    function setIcon(isDark) {
-      toggleBtn.innerHTML = isDark
-        ? '<i class="fas fa-sun rotate"></i>'
-        : '<i class="fas fa-moon rotate"></i>';
-
-      setTimeout(() => {
-        const icon = toggleBtn.querySelector("i");
-        if (icon) {
-          icon.classList.remove("rotate");
-        }
-      }, 500);
-    }
-
-    /* Load saved theme */
-    if (localStorage.getItem("theme") === "dark") {
-      body.classList.add("dark-mode");
-      setIcon(true);
-    } else {
-      setIcon(false);
-    }
-
-    /* Change theme */
-    toggleBtn.addEventListener("click", () => {
-      body.classList.toggle("dark-mode");
-
-      if (body.classList.contains("dark-mode")) {
-        setIcon(true);
-        localStorage.setItem("theme", "dark");
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
       } else {
-        setIcon(false);
-        localStorage.setItem("theme", "light");
+        navbar.classList.remove('scrolled');
       }
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when clicking links on mobile
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
     });
   </script>
 
   <!-- =====================================================
-        AOS JAVASCRIPT
+        AOS ANIMATION SCRIPT
   ====================================================== -->
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-  ></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
     AOS.init({
-      duration: 1000,
-      once: true
+      duration: 900,
+      once: true,
+      offset: 100
     });
   </script>
 
