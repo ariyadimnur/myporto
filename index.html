@@ -953,9 +953,10 @@
   <!-- AOS Script & Mobile Navigation Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
+    // Inisialisasi Animasi AOS
     AOS.init({ duration: 800, once: true });
 
-    // Mobile Menu Toggle Handler
+    // Logika Toggle Menu Mobile
     const menuToggle = document.getElementById('menu-toggle');
     const navLinks = document.getElementById('nav-links');
 
@@ -963,8 +964,8 @@
       navLinks.classList.toggle('active');
     });
 
-    // Close mobile menu automatically on navigation item click
-    document.querySelectorAll('.nav-item, .nav-cta').forEach(link => {
+    // Menutup menu otomatis saat salah satu tautan menu diklik pada layar HP
+    document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
       });
