@@ -1005,10 +1005,14 @@
   <!-- AOS Script & Mobile Navigation Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
-    // Inisialisasi Animasi AOS
-    AOS.init({ duration: 800, once: true });
+    // Inisialisasi AOS dengan beban ringan
+    AOS.init({ 
+      duration: 600, // Mempercepat durasi sedikit agar terasa lebih lincah
+      once: true,    // Animasi hanya diputar sekali saat pertama kali dilihat
+      disable: 'mobile' // Opsional: bisa diaktifkan jika ingin mematikan animasi khusus di HP demi kelancaran maksimal
+    });
 
-    // Logika Toggle Menu Mobile
+    // Mobile Menu Toggle Handler
     const menuToggle = document.getElementById('menu-toggle');
     const navLinks = document.getElementById('nav-links');
 
@@ -1016,7 +1020,6 @@
       navLinks.classList.toggle('active');
     });
 
-    // Menutup menu otomatis saat salah satu tautan menu diklik pada layar HP
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
