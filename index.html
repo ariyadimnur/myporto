@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ariyadi M Nur — Senior Web Developer &amp; UI/UX Specialist</title>
+  <title>Ariyadi M Nur — Portofolio Web Developer &amp; UI/UX</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png">
   
   <!-- SEO & Meta -->
-  <meta name="description" content="Portofolio profesional Ariyadi M Nur, Web Developer dan UI/UX Designer.">
+  <meta name="description" content="Situs portofolio resmi Ariyadi M Nur, Web Developer dan UI/UX Designer yang berfokus pada performa tinggi dan pengalaman pengguna modern.">
   <link rel="canonical" href="https://ariyadi.eu.org/">
   
   <!-- Fonts & Icons -->
@@ -62,7 +62,7 @@
       background-image: 
         radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.12) 0%, transparent 40%),
         radial-gradient(circle at 90% 80%, rgba(56, 189, 248, 0.08) 0%, transparent 40%);
-      background-attachment: fixed;
+      /* Properti background-attachment fixed dihapus agar scroll jauh lebih ringan */
     }
 
     a {
@@ -705,7 +705,6 @@
         margin: 0 auto 30px auto;
       }
       
-      /* Tombol Menu Mobile yang Lebih Interaktif */
       .menu-toggle {
         display: block;
         font-size: 1.25rem;
@@ -723,7 +722,6 @@
         border-color: var(--border-hover);
       }
 
-      /* Tampilan Menu Dropdown Mobile yang Elegan dan Melayang */
       .nav-links {
         position: absolute;
         top: 100%;
@@ -741,14 +739,12 @@
         border: 1px solid rgba(99, 102, 241, 0.2);
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
         
-        /* Pengaturan Animasi Buka-Tutup yang Mulus */
         opacity: 0;
         visibility: hidden;
         transform: translateY(-10px);
         transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
       }
 
-      /* Kelas saat menu aktif / dibuka */
       .nav-links.active {
         opacity: 1;
         visibility: visible;
@@ -1007,9 +1003,8 @@
   <script>
     // Inisialisasi AOS dengan beban ringan
     AOS.init({ 
-      duration: 600, // Mempercepat durasi sedikit agar terasa lebih lincah
-      once: true,    // Animasi hanya diputar sekali saat pertama kali dilihat
-      disable: 'mobile' // Opsional: bisa diaktifkan jika ingin mematikan animasi khusus di HP demi kelancaran maksimal
+      duration: 600, 
+      once: true 
     });
 
     // Mobile Menu Toggle Handler
